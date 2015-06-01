@@ -1,0 +1,17 @@
+{
+  "name": "Vector",
+  "version": "1.0.0",
+  "description": "A simple, immutable, vector class.",
+  "author": "Pierre Gaudichon",
+  "license": "MIT",
+  "keywords": [
+    "vector",
+    "immutable",
+    "class"
+  ],
+
+  "main": "index.js",
+  "scripts": {
+    "install": "sh build_system.sh"
+  }
+}
