@@ -74,6 +74,7 @@ module.exports = class Vector
 			x: a.x * b.x
 			y: a.y * b.y
 
+
 	@divide: (a, b) ->
 		Vector.carthesian
 			x: a.x / b.x
