@@ -26,7 +26,7 @@ vector = Vector.fromTwo Two.js#vector
 ### Methods
 
 ```coffee
-vector.equals: (Vector) -> Vector
+vector.equals: (Vector) -> Boolean
 vector.add: (Vector) -> Vector
 vector.mult: (Number) -> Vector
 vector.prod: (Vector) -> Vector
