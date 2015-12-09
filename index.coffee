@@ -1,4 +1,4 @@
-module.exports = class Vector
+class Vector
 
 
 	@parseArgs: (arr) ->
@@ -47,6 +47,11 @@ module.exports = class Vector
 
 
 	@random: -> Vector.carthesian x: Math.random(), y: Math.random()
+
+
+	@randomCircle: -> Vector.polar
+		r: Math.sqrt Math.random()
+		t: 2*Math.PI*Math.random()
 
 
 	@fromTwo: ({x, y}) -> Vector.carthesian {x, y}
@@ -157,3 +162,6 @@ module.exports = class Vector
 	toJSON: -> "(x= #{@x}, y= #{@y}, r= #{@r}, t= #{@t})"
 
 
+
+if window? then window.Vector = Vector
+if module? and module.exports? then module.exports = Vector
